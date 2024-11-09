@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link opener</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&
+    display=swap" rel="stylesheet">
+
+
+    <style>
+        html,
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+            /* background-color: aquamarine; */
+        }
+        h1{
+            font-family: monospace;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+            color: #2f5876;
+        }
+
+        a:link, a:visited{
+            color: #000;
+            outline: 0;
+            text-decoration: none;
+        }
+        img{
+            width: 30px;
+
+        }
+
+        .modal_header{
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal_content{
+            padding: 0 22px;
+        }
+
+        .modal_icon{
+            border-top: 0.5 solid #dadada;
+            height: 50px;
+            width: 100%;
+        }
+
+        .logo{
+            padding: 16px;
+        }
+
+        .logo_icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+        .version{
+            color: #444;
+            font-size: 18px;
+        }
+        .flex_container{
+            display: flex;
+            justify-content: center;
+            padding: 10px 22px;
+            
+        }
+        .flex{
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 70px;
+        }
+        .flex:hover{
+            opacity: 0.4;
+        }
+
+        .flex .fa, .flex .fab{
+            font-size: 25px;
+            color: #2f5876;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="model_header">
+        <h1 class="logo">
+            <img src="images/icon_256.png" alt="Instant link" class="logo_icon">
+            Instant link
+            <span class="version">(1.0.0)</span>
+        </h1>
+    </div>
+    <div class="modal_content">
+        <p>Easily acces Your link</p>
+    </div>
+    <div class="model_icon">
+        <div class="flex_container">
+            <div class="flex">
+                <a href="https://www.codechef.com/users/amansharma703">
+                    <i class="fa fa-globe"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.codechef.com/users/amansharma703">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://youtube.com">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://twitter.com/AmanSharma703">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://github.com/AmanSharma703">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
